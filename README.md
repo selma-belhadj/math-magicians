@@ -6,10 +6,9 @@
 
 
 ## Built With
-
-- JavaScript
-- HTML5 and CSS3 
-- ReactJS
+- HTML & CSS & JavaScript
+- Html, Css & JavaScript linters
+- React.Js
 
 ## Live Demo 
 
@@ -19,31 +18,22 @@
 ## Getting Started
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-
-## `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
 
-To get a local copy up and running follow these simple example steps.
-
+- clone the repository by running\
+    `git clone https://github.com/selma-belhadj/math-magicians.git`
+- navigate to the folder\
+    `cd math-magicians`
+- Install packages\
+    `npm install`
+- Run the app\
+    `npm start`
+- Eject the app\
+    `npm run eject`
+- Create build app\
+    `npm run build`
+- Test Linters app\
+    `npm run check-linters`
 
 ## Authors
 
@@ -64,3 +54,5 @@ Feel free to check the [issues page](../../issues/).
 
 Give a ⭐️ if you like this project!
 
+## 📝  License
+This project is [MIT](./MIT.md) licensed.

@@ -12,7 +12,7 @@
 
 ## Live Demo 
 
-[Live Demo Link](selmab-math-magicians.netlify.app)
+[Live Demo Link](https://selmab-math-magicians.netlify.app/)
 
 
 ## Getting Started

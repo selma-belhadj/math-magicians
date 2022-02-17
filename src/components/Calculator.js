@@ -1,32 +1,40 @@
 import './style.css';
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
 import Button from './Button';
 import OutputScreen from './OutputScreen';
+import calculate from '../logic/calculate';
 
-class Calculator extends PureComponent {
+class Calculator extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { total: '0', next: null, operation: null };
+  }
+
+  handleClick = (element) => {
+    const result = calculate(this.state, element);
+    if (result.next === null && result.total === null) {
+      result.total = '0';
+    }
+    this.setState(result);
+  }
+
   render() {
+    const { total, next, operation } = this.state;
+    const calculatorElem = ['AC', '+/-', '%', '÷', 7, 8, 9, 'x', 4, 5, 6, '-', 1, 2, 3, '+', 0, '.', '=']
+      .map((elem) => {
+        if (`${elem}` === 'AC' || `${elem}` === '+/-' || `${elem}` === '%' || `${elem}` === '.') {
+          return <Button btnName={`${elem}`} className="operation" handleClick={this.handleClick} key={elem} />;
+        } if (`${elem}` === 'x' || `${elem}` === '+' || `${elem}` === '-' || `${elem}` === '÷' || `${elem}` === '=') {
+          return <Button btnName={`${elem}`} className="operator" handleClick={this.handleClick} key={elem} />;
+        } if (`${elem}` === '0') {
+          return <Button btnName={`${elem}`} className="number span-two" handleClick={this.handleClick} key={elem} />;
+        }
+        return <Button btnName={`${elem}`} className="number" handleClick={this.handleClick} key={elem} />;
+      });
     return (
       <div className="calculator-grid">
-        <OutputScreen previousOperand="888" operation="+" currentOperand="999" />
-        <Button btnName="AC" className="operation" />
-        <Button btnName="+/-" className="operation" />
-        <Button btnName="%" className="operation" />
-        <Button btnName="÷" className="operator" />
-        <Button btnName="7" className="number" />
-        <Button btnName="8" className="number" />
-        <Button btnName="9" className="number" />
-        <Button btnName="X" className="operator" />
-        <Button btnName="4" className="number" />
-        <Button btnName="5" className="number" />
-        <Button btnName="6" className="number" />
-        <Button btnName="–" className="operator" />
-        <Button btnName="1" className="number" />
-        <Button btnName="2" className="number" />
-        <Button btnName="3" className="number" />
-        <Button btnName="+" className="operator" />
-        <Button btnName="0" className="number span-two" />
-        <Button btnName="." className="operation" />
-        <Button btnName="=" className="operator" />
+        <OutputScreen previousOperand={total} operation={operation} currentOperand={next} />
+        {calculatorElem}
       </div>
     );
   }

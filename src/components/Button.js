@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 
 class Button extends PureComponent {
   render() {
-    const { btnName, className } = this.props;
+    const { btnName, className, handleClick } = this.props;
     return (
-      <button className={className} type="button">{btnName}</button>
+      <button className={className} type="button" onClick={() => { handleClick(btnName); }}>{btnName}</button>
     );
   }
 }
@@ -13,5 +13,6 @@ class Button extends PureComponent {
 Button.propTypes = {
   btnName: PropTypes.string.isRequired,
   className: PropTypes.string.isRequired,
+  handleClick: PropTypes.func.isRequired,
 };
 export default Button;

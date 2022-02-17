@@ -1,10 +1,7 @@
-/* eslint-disable react/prefer-stateless-function  */
-/* eslint-disable react/prop-types */
-/* eslint-disable react/destructuring-assignment */
+import React, { PureComponent } from 'react';
+import PropTypes from 'prop-types';
 
-import React, { Component } from 'react';
-
-class Button extends Component {
+class Button extends PureComponent {
   render() {
     const { btnName, className } = this.props;
     return (
@@ -12,4 +9,9 @@ class Button extends Component {
     );
   }
 }
+
+Button.propTypes = {
+  btnName: PropTypes.string.isRequired,
+  className: PropTypes.string.isRequired,
+};
 export default Button;

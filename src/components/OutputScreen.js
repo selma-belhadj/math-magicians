@@ -1,10 +1,7 @@
-/* eslint-disable react/prefer-stateless-function  */
-/* eslint-disable react/prop-types */
-/* eslint-disable react/destructuring-assignment */
+import React, { PureComponent } from 'react';
+import PropTypes from 'prop-types';
 
-import React, { Component } from 'react';
-
-class OutputScreen extends Component {
+class OutputScreen extends PureComponent {
   render() {
     const { previousOperand, operation, currentOperand } = this.props;
     return (
@@ -19,5 +16,9 @@ class OutputScreen extends Component {
     );
   }
 }
-
+OutputScreen.propTypes = {
+  previousOperand: PropTypes.number.isRequired,
+  operation: PropTypes.string.isRequired,
+  currentOperand: PropTypes.number.isRequired,
+};
 export default OutputScreen;

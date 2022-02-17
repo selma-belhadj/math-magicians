@@ -1,12 +1,9 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable react/prefer-stateless-function  */
-
 import './style.css';
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import Button from './Button';
 import OutputScreen from './OutputScreen';
 
-class Calculator extends Component {
+class Calculator extends PureComponent {
   render() {
     return (
       <div className="calculator-grid">

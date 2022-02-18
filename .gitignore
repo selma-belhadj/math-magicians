@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 /notes.txt
+/src/components/Calculator3.js
 
 # testing
 /coverage

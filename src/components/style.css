@@ -9,12 +9,28 @@ body {
   background: linear-gradient(to right, #a5a5a5, #fdc168);
 }
 
+.container-cal {
+  padding-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1024px;
+  padding-left: 25px;
+  padding-right: 20px;
+}
+
+.container-cal h2 {
+  margin-left: 60px;
+  font-size: 1.7em;
+  margin-bottom: 20px;
+}
+
 .calculator-grid {
   display: grid;
-  margin-top: 2rem;
+  margin-top: -2rem;
   justify-content: center;
   grid-template-columns: repeat(4, 6rem);
-  grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
+  grid-template-rows: minmax(7rem, auto) repeat(5, 5rem);
 }
 
 .span-two {
@@ -72,4 +88,56 @@ body {
   font-size: 2rem;
   border: 1px solid white;
   outline: none;
+}
+
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+  margin-left: auto;
+  margin-bottom: 2px;
+}
+
+.navbar h1 {
+  color: #000;
+  font-size: 24px;
+}
+
+.linklist {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+  color: #000;
+  font-size: 1.2rem;
+}
+
+.linklist:hover {
+  color: #5c3803;
+}
+
+.Home {
+  margin-top: 30px;
+  padding: 10px 20px;
+}
+
+.Home p {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.Home h2 {
+  margin-left: 60px;
+  font-size: 1.7em;
+  margin-bottom: 20px;
+}
+
+.Quote p {
+  margin-top: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 20px 20px;
+  font-size: 1.7em;
 }

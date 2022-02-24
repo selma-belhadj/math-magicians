@@ -22,10 +22,16 @@ const Calculator = () => {
       return <Button btnName={`${elem}`} className="number" handleClick={handleClick} key={elem} />;
     });
   return (
-    <div className="calculator-grid">
-      <OutputScreen previousOperand={total} operation={operation} currentOperand={next} />
-      {calculatorElem}
-    </div>
+    <>
+      <div className="container-cal">
+        <h2>Let&apos;s do some math!</h2>
+        <div className="calculator-grid">
+          <OutputScreen previousOperand={total} operation={operation} currentOperand={next} />
+          {calculatorElem}
+        </div>
+      </div>
+    </>
+
   );
 };
 

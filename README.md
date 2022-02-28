@@ -12,8 +12,8 @@
 
 ## Live Demo 
 
-[Live Demo Link netlify](https://selmab-math-magicians.netlify.app/)
-[Live Demo Link Heroku](https://selmab-math-magicians.heroku.app/)
+[Live Demo Link using netlify](https://selmab-math-magicians.netlify.app/)\
+[Live Demo Link using Heroku](https://math-magicains.herokuapp.com/)
 
 
 ## Getting Started

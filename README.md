@@ -4,6 +4,8 @@
 
 > Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations and read a random math-related quote.
 
+![screenshot](./src/assets/screenshot.png)
+
 
 ## Built With
 - HTML & CSS & JavaScript
@@ -41,7 +43,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 👤 **Selma Belhadj**
 
 - GitHub: [@selma-belhadj](https://github.com/selma-belhadj)
-- Twitter: [@Bel_Selma16](https://twitter.com/Bel_Selma16)
+- Twitter: [@selma_bel_hadj](https://twitter.com/selma_bel_hadj)
 - LinkedIn: [@selma-belhadj](https://www.linkedin.com/in/selma-belhadj/)
 
 
@@ -49,7 +51,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/selma-belhadj/math-magicians/issues).
 
 ## Show your support
 
